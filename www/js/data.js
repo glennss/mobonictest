@@ -145,56 +145,26 @@ angular.module('mobionicApp.data', [])
     var data = {};
     
     data.map = {
-        zoom: 12,
+        zoom: 17,
         center: {
-            latitude: 40.74,
-            longitude: -74.18
+            latitude: 51.5182779,
+            longitude: -0.0830673
         },
         markers: [
         {
             id: 1,
             icon: 'img/blue_marker.png',
-            latitude: 40.71,
-            longitude: -74.21,
-            title: 'This is our main store'
+            latitude: 51.5182779,
+            longitude: -0.0830673,
+            title: 'Destination Education'
         }, 
         {
             id: 2,
             latitude: 40.72,
             longitude: -74.20,
             title: 'This is our second store'
-        },
-        {
-            id: 3,
-            latitude: 40.73,
-            longitude: -74.19,
-            title: 'This is our third store'
-        },
-        {
-            id: 4,
-            latitude: 40.74,
-            longitude: -74.18,
-            title: 'This is our fourth store'
-        },
-        {
-            id: 5,
-            latitude: 40.75,
-            longitude: -74.17,
-            title: 'This is our fifth store'
-        },
-        {
-            id: 6,
-            latitude: 40.76,
-            longitude: -74.16,
-            title: 'This is our sixth store'
-        },
-        {
-            id: 7,
-            icon: 'img/plane.png',
-            latitude: 40.77,
-            longitude: -74.15,
-            title: 'Airport'
-        }]
+        }
+        ]
     };
 
     return data;
