@@ -11,7 +11,7 @@ angular.module('mobionicApp.data', [])
             note: 'Latest News',
             url: '#/app/news'
         },
-        { 
+     /*   {
             title: 'Products',
             icon: 'ion-ios7-cart',
             note: 'Our Products',
@@ -46,11 +46,11 @@ angular.module('mobionicApp.data', [])
             icon: 'ion-social-rss',
             note: 'RSS Feed',
             url: '#/app/feeds'
-        },
+        },*/
         { 
-            title: 'RSS (Pull to refresh)',
+            title: 'Active Jobs (Pull to refresh)',
             icon: 'ion-social-rss',
-            note: 'RSS Feed',
+            note: 'Active Jobs',
             url: '#/app/feeds-refresher'
         },
         { 
@@ -64,6 +64,12 @@ angular.module('mobionicApp.data', [])
             icon: 'ion-ionic',
             note: 'Server Side',
             url: '#/app/serverposts'
+        },
+        {
+            title: 'Map',
+            icon: 'ion-map',
+            note: 'Find Us',
+            url: '#/app/map'
         },
         { 
             title: 'Mobile Plugins',
@@ -145,7 +151,7 @@ angular.module('mobionicApp.data', [])
     var data = {};
     
     data.map = {
-        zoom: 17,
+        zoom: 12,
         center: {
             latitude: 51.5182779,
             longitude: -0.0830673
@@ -154,8 +160,8 @@ angular.module('mobionicApp.data', [])
         {
             id: 1,
             icon: 'img/blue_marker.png',
-            latitude: 51.5182779,
-            longitude: -0.0830673,
+            latitude: 51.5186679,
+            longitude: -0.0833673,
             title: 'Destination Education'
         }, 
         {
@@ -340,10 +346,10 @@ angular.module('mobionicApp.data', [])
     //var json = 'json/wordpress.json';
     
     /* Set your URL as you can see in the following example */
-    // var json = 'http://destinationeducation.net/?json=get_recent_posts';
+     var json = 'http://www.destinationeducation.net/?json=get_recent_posts';
     
     /* With user-friendly permalinks configured */
-     var json = 'http://www.destinationeducation.net/vacancies/?json=search%=hornchurch';
+    // var json = 'http://www.destinationeducation.net/vacancies/?json=search%=hornchurch';
 
     var deferred = $q.defer();
     var promise = deferred.promise;
@@ -388,11 +394,11 @@ angular.module('mobionicApp.data', [])
     
     /* Set your URL as you can see in the following example */
     /* NOTE: In case of the default permalinks, you should add '&' at the end of the url */
-    // var json = 'http://destinationeducation.net/?json=get_recent_posts&';
+     var json = 'http://www.destinationeducation.net/?json=get_recent_posts&';
     
     /* With user-friendly permalinks configured */
     /* NOTE: In case of the user-friendly permalinks, you should add '?' at the end of the url */
-     var json = 'http://www.destinationeducation.net/vacancies/?json=search%=hornchurch';
+    // var json = 'http://www.destinationeducation.net/vacancies/?json=search%=hornchurch';
     
     service.getURL = function() { return json; };
     
